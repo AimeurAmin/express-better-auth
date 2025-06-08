@@ -92,12 +92,14 @@ src/
 - `POST /api/auth/sign-up/email` - Register with email/password
 - `POST /api/auth/sign-in/email` - Login with email/password  
 - `POST /api/auth/sign-out` - Logout
-- `GET /api/auth/session` - Get current session
+- `POST /api/auth/forget-password` - Request a password change (delivers an email with a link)
+- `POST /api/auth/reset-password` - Reset the password (requires token delivered by email)
 
 ### Custom API Routes
 
 - `GET /api/health` - Health check
-- `GET /api/auth/me` - Get current user (requires auth)
+- `GET /api/me` - Get current user (requires auth)
+- `GET /api/me/session` - Get current user (requires auth)
 - `GET /api/users/profile` - Get user profile (requires auth)
 - `PUT /api/users/profile` - Update user profile (requires auth)
 
