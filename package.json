@@ -1,0 +1,42 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "pdf api",
+  "main": "main.js",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "auth:generate": "npx @better-auth/cli generate",
+    "auth:migrate": "npx @better-auth/cli migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AimeurAmin/pdf_api.git"
+  },
+  "author": "Amin Aimeur",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.53.0",
+    "@hedystia/better-auth-typeorm": "^0.2.0",
+    "better-auth": "^1.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.0.1",
+    "helmet": "^8.0.0",
+    "mysql2": "^3.11.3",
+    "nodemailer": "^7.0.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.24"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.9",
+    "@types/nodemailer": "^6.4.17",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
